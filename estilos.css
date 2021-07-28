@@ -1,0 +1,299 @@
+* {
+    margin: 0%;
+    padding: 0%; 
+    box-sizing: border-box;
+}
+body {
+    background-color: #99ddff;
+    background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
+    linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
+    linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
+    linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
+    background-size: 13px, 29px, 37px, 53px;
+    max-width: 1500px;
+}
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: repeat(3, auto);
+}
+.header {
+    padding: 10px 10px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-family: dancing script;
+    background:url(https://i.pinimg.com/originals/ac/cc/78/accc785e5e42e4d9226e5f2fd85025d7.jpg);
+    animation: movimiento 10s infinite linear alternate;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+header img {
+    border-radius: 50%;
+}
+@keyframes movimiento {
+    from {
+        background-position: bottom left;
+    }
+    to {
+        background-position: top right;
+    }
+}
+.contenido {
+    grid-column: span 2;
+}
+.img {
+    clear: both;
+    float: right;
+}
+.img2 {
+    clear: both;
+    float: left;
+}
+.txt {
+    font-family: Uchen, cursive;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.6em;
+}
+.txt2 {
+    font-family: Uchen, cursive;
+    margin-top: 7em;
+    justify-content: left;
+    align-content: left;
+}
+.txt3 {
+    font-family: Uchen, cursive;
+    margin-left: 1.6em;
+    justify-content: center;
+    align-content: center;
+}
+.txt4 {
+    margin-top: 10em;
+    font-family: Uchen, cursive;
+    justify-content: center;
+    align-content: center;
+}
+.p {
+    margin-left: 1em;
+    font-size: 1em;
+}
+main section h1 {
+    margin-top: 1em;
+    margin-left: 10em;
+    font-family: dancing script;
+    font-size: 40px;
+}
+.btnNeon {
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-left: 2em;
+    color: black;
+    letter-spacing: 4px;
+    font-size: 24px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.btnNeon:hover {
+    background: violet;
+    box-shadow: 0 0 10px violet, 0 0 40px, 0 0 80px violet;
+    transition-delay: 0.5s;
+}
+.btnNeon span{ 
+    position: absolute;
+    display: block;
+}
+#span1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, violet);
+}
+.btnNeon:hover #span1{
+    left: 100%;
+    transition: 1s;
+} 
+#span3 {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, violet);
+    transition-delay: 0.5s;
+}
+.btnNeon:hover #span3{
+    right: 100%;
+    transition: 1s;
+} 
+#span2 {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, violet);
+}
+.btnNeon:hover #span2 {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+} 
+#span4 {
+    bottom: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, violet);
+}
+.btnNeon:hover #span4 {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+} 
+hr {
+    border: 0; 
+    height: 0; 
+    box-shadow: 0 1px 5px 1px purple;
+}
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    bottom: 0;
+    width: 100%;
+    font-family: Uchen, cursive;
+    font-size: 0.90em;
+}
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-instagram {
+    background: #fa4e30;
+    color: white;
+  }
+.header2 {
+    width: 100%;
+    height: 60px;
+    background: whitesmoke;
+}
+.container-header {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+.logo-title {
+    display: flex;
+}
+.logo-title img {
+    width: 45px;
+    height: 45px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.logo-title h4 {
+    color: black;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-family: dancing script;
+    font-size: 1.3em;
+}
+i {
+    position: absolute;
+    right: 10px;
+    top: -32px;
+}
+.container-portada {
+    width: 100%;
+    height: 100px;
+    background-image: url(https://i.pinimg.com/originals/ac/cc/78/accc785e5e42e4d9226e5f2fd85025d7.jpg);
+    background-size: 50%;
+    animation: movimiento 10s linear infinite alternate;
+}
+@keyframes movimiento {
+    from {
+        background-position: bottom left;
+    }
+    to {
+        background-position: top right;
+    }
+}
+.container-details {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    font-family: dancing script;
+}
+.details {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    top: 20px;
+    margin-left: 550px;
+}
+.h2 {
+    font-family: dancing script;
+    font-weight: bold;
+    font-size: 50px;
+    margin-left: 4.5em;
+    color: rgb(235, 113, 194);
+}
+.h22 {
+    font-family: dancing script;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 1em;
+    color: rgb(235, 113, 194);
+}
+@media (max-width: 360px) {
+    body {
+        background-color: lightblue;
+        background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
+        linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
+        linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
+        linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
+        background-size: 13px, 29px, 37px, 53px;
+        max-width: 400px;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        background-color: lavender;
+        background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
+        linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
+        linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
+        linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
+        background-size: 13px, 29px, 37px, 53px;
+        max-width: 1200px;
+    }
+}
+@media (max-width: 1200px) {
+    body {
+        background-color: plum;
+        background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
+        linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
+        linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
+        linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
+        background-size: 13px, 29px, 37px, 53px;
+        max-width: 1200px;
+    }
+}
+
